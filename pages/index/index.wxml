@@ -1,0 +1,52 @@
+<!--pages/index/index.wxml-->
+<!-- 轮播图 -->
+<swiper class="swiper" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{banner}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 电影 -->
+  <view class="movie-bar">
+    <view class="movie-tile">电影</view>
+    <view class="movie-more" bindtap="movie_more">更多 ></view>
+  </view>
+
+<!-- 电影展示 -->
+<scroll-view scroll-x>
+  <view class="movie-info">
+    <block wx:for="{{movielist}}" wx:key="index" >
+      <view class="movie-item" bindtap="selectMovie" data-id="{{index}}">
+        <image src="{{item.img_url}}"></image>
+        <view class="movie-name">{{item.name}}</view>
+        <stars rate="{{item.score}}" top="10" left="0"></stars>
+        <!-- <rate value="{{item.score/2}}" length="5"disabled="{{true}}" bindchange="showResult"></rate> -->
+        <!-- <view class="movie-score">{{item.score}}</view> -->
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+<!-- 图书 -->
+  <view class="movie-bar">
+    <view class="movie-tile">图书</view>
+    <view class="movie-more" bindtap="book_more">更多 ></view>
+  </view>
+
+
+<!-- 图书展示 -->
+<scroll-view scroll-x>
+  <view class="movie-info">
+    <block wx:for="{{books}}" wx:key="index">
+      <view class="movie-item" bindtap="selectBook" data-id="{{index}}">
+        <image src="{{item.img_url}}"></image>
+        <view class="movie-name">{{item.name}}</view>
+        <!-- <rate value="{{item.score/2}}" length="5"disabled="{{true}}" bindchange="showResult"></rate>
+        <view class="movie-score">{{item.score}}</view> -->
+        <stars rate="{{item.score}}" top="7" left="0"></stars>
+      </view>
+    </block>
+  </view>
+</scroll-view>

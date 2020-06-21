@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "stars":"/components/stars/stars",
+    "like":"/components/like/like"
+  }
+}

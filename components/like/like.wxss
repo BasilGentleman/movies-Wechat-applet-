@@ -1,0 +1,45 @@
+/* components/like/like.wxss */
+.like_box {
+  width: 170rpx;
+  height: 55rpx;
+  background-color: #33CEC3;
+  /* border: 1rpx solid #373333; */
+  /* border-radius: 75%; */
+  font-size: 22rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.like_box::after {
+  content: "";
+  height: 55rpx;
+  width: 30rpx;
+  position: relative;
+  display: block;
+  right: -20rpx;
+  background-color: #33CEC3;
+  border-radius: 0 100% 100% 0;
+  /* border: 1rpx solid #373333; */
+}
+.like_box::before {
+  content: "";
+  height: 55rpx;
+  width: 30rpx;
+  position: relative;
+  display: block;
+  left: -20rpx;
+  background-color: #33CEC3;
+  border-radius:  100% 0 0 100% ;
+  /* border: 1rpx solid #373333; */
+}
+image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.liked {
+  color: red;
+}
+.unlike {
+  color: #373333;
+}

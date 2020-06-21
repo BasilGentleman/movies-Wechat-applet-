@@ -1,0 +1,30 @@
+<!--pages/like_list/like_list.wxml-->
+<view ></view>
+<view wx:if="{{ismovies == true}}">
+	<scroll-view srcoll-y>
+		<view class="movie-info">
+			<block wx:for="{{movielist}}" wx:key="index">
+				<view class="movie-item" bindtap="selectMovie" data-id="{{index}}">
+					<image src="{{item.img_url}}"></image>
+					<view class="movie-name">{{item.name}}</view>
+					<stars rate="{{item.score}}" top="10" left="0"></stars>
+				</view>
+			</block>
+		</view>
+	
+	</scroll-view>
+</view>
+<view wx:else>
+	<scroll-view srcoll-y>
+		<view class="movie-info">
+			<block wx:for="{{books}}" wx:key="index">
+				<view class="movie-item" bindtap="selectBook" data-id="{{index}}">
+					<image src="{{item.img_url}}"></image>
+					<view class="movie-name">{{item.name}}</view>
+					<stars rate="{{item.score}}" top="10" left="0"></stars>
+				</view>
+			</block>
+		</view>
+	
+	</scroll-view>
+</view>

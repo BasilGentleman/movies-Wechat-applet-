@@ -1,0 +1,134 @@
+/* pages/book_info/book_info.wxss */
+page{
+  background: #FAF9DE;
+  overflow-y: auto;
+}
+/* 头部 */
+.info_head{
+  width: 100%;
+  /* height: 350rpx; */
+  display: flex;
+  justify-content: left;
+  /* align-items: center; */
+}
+.info_poster{
+  margin: 40rpx 40rpx;
+  border: 1rpx ;
+  border-radius: 3%;
+}
+.info_poster image {
+  width: 220rpx;
+  height: 280rpx;
+}
+.info_left {
+  width: 100%;
+}
+.info_name {
+  display: block;
+  margin-top: 40rpx;
+  font-size: 42rpx;
+  font-weight: 800;
+}
+
+.info_author {
+  display: block;
+  font-size: 26rpx;
+  color: grey;
+}
+.info_publisher {
+  display: block;
+  font-size: 26rpx;
+  color: grey;
+}
+.info_year{
+  display: block;
+  font-size: 26rpx;
+  color: grey;
+}
+
+.info_stars {
+  float: left;
+}
+.like_button {
+  display: block;
+  margin-top: 14rpx;
+}
+.clearfloat {
+  clear:both
+}
+
+
+/* 简介 */
+.info_description {
+  width: 100%;
+  height: 340rpx;
+}
+.info_description_title {
+  display: block;
+  font-size: 42rpx;
+  font-weight: 500;
+  margin-left: 30rpx;
+}
+.info_description_info {
+  width: 93%;
+  height: 400rpx;
+  margin: 30rpx 30rpx;
+  overflow-y: auto;
+  /* text-indent:50rpx */
+}
+
+
+/* 短评 */
+.short_comment {
+  width: 100%;
+  height: auto;
+  margin-top: 160rpx;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: white; */
+  border-radius: 4%;
+  margin-bottom: 150rpx;
+}
+.short_comment_content{
+  width: 90%;
+  height: 500rpx;
+  margin: 0 auto;
+  background-color: white;
+}
+.short_comment_title {
+  margin-top: 17rpx;
+  font-size: 42rpx;
+  font-weight: 500;
+}
+.short_comment_nostatement {
+  margin-top: 20rpx;
+  bottom: 20rpx;
+  text-align: center;
+  color:gray;
+}
+.short_comment_hasstatement {
+  height: 400rpx;
+  overflow-y: auto;
+ 
+}
+.short_comments {
+  width: 90%;
+  height: auto;
+  /* overflow-y: auto; */
+  margin: 16rpx auto;
+  font-size: 30rpx;
+  padding-bottom: 18rpx;
+  border-bottom: 1rpx solid gray;
+}
+
+
+.short_comments_name {
+  margin-right: 20rpx;
+}
+
+.short_comments_time {
+  color:gray	;
+}
+.short_comments_content {
+  display: block;
+}

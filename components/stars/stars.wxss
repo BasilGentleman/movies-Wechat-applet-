@@ -1,0 +1,12 @@
+.rate-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  color: black;
+  margin-top: 10rpx;
+}
+.rate-group image {
+  width: 35rpx;
+  height: 35rpx;
+}

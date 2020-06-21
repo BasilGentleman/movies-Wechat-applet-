@@ -1,0 +1,48 @@
+<!--pages/book_info/book_info.wxml-->
+<!-- 头部 -->
+<view class="info_head">
+  <view class="info_poster"><image src="{{books.img_url}}"></image></view>
+  <view class="info_left">
+    <text class="info_name">{{books.name}}</text>
+    <text class="info_author">作者：{{books.author}}</text>
+    <text class="info_publisher">出版社：{{books.publisher}}</text>
+    <text class="info_year">出版时间：{{books.year}}</text>
+    <!-- <stars rate="{{movie_info.score}}"></stars> -->
+    <!-- onLoad执行时机在所有组件初始化完成之后 --> 
+    <view class="info_stars" wx:if="{{books.score}}">
+      <stars rate="{{books.score}}" top="7" left="0"></stars>
+    </view>
+    <view class="clearfloat"></view>
+     <like class="like_button" isLikes = "{{isLikes}}"  bind:isLike="likes"></like>
+  </view>
+</view>
+
+<!-- 简介 -->
+<view class="info_description">
+  <text class="info_description_title">简介</text>
+  <view class="info_description_info">
+    <text multiline="true">{{books.introduce}}</text>
+  </view>
+</view>
+
+<!-- 短评 -->
+<view class="short_comment">
+  <view class="short_comment_content">
+     <view class="short_comment_title">短评</view>
+
+  <view wx:if="{{books.short_comments}}" class="short_comment_hasstatement">
+    <view wx:for="{{books.short_comments}}" wx:key="*this">
+      <view class="short_comments">
+        <text class="short_comments_name">{{item.user}}</text>
+        <text class="short_comments_time">{{item.time}}</text>
+        <text class="short_comments_content">{{item.content}}</text>
+      </view>
+    </view>
+  
+  </view>
+   <view wx:else class="short_comment_nostatement"> 
+         —— 暂无短评 ——
+      </view>
+  </view>
+ 
+</view>

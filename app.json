@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/list/list",
+    "pages/movie_info/movie_info",
+    "pages/book_info/book_info",
+    "pages/like_list/like_list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#33CEC3",
+    "navigationBarTitleText": "电影首页",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#fff",
+    "borderStyle": "black",
+    "backgroundColor": "#33CEC3",
+    "list": [
+    {
+    "pagePath": "pages/index/index",
+    "iconPath":"images/home.png",
+    "selectedIconPath":"images/home_select.png",
+    "text": "首页"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "iconPath":"images/me.png",
+      "selectedIconPath":"images/me_select.png",
+      "text": "我的"
+      }
+     
+    ]
+    }
+    ,
+
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,96 @@
+/* pages/personal/personal.wxss */
+page{
+  background: #FAF9DE;
+}
+.content {
+  background: #33CEC3;
+  height: 460rpx;
+  width: 100%;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+._button{
+  margin-top: 59rpx;
+  width: 220rpx;
+  height: 220rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 50%;
+}
+.head >view image {
+  margin-top: 59rpx;
+  width: 220rpx;
+  height: 220rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 50%;
+}
+.head >view text {
+  /* display: block; */
+  display: flex;
+  margin-top: 17rpx;
+  /* margin-left: 70rpx; */
+  font-size: 40rpx;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.exit {
+  width: 80rpx;
+  height: auto;
+  margin: 4rpx auto;
+} 
+
+
+.fun {
+  width: 100%;
+  height: 100%;
+ 
+}
+.like {
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  position: absolute;
+}
+.icon {
+  width: 100%;
+  margin:90rpx 70rpx;
+  display : flex ; 
+  flex-flow : row;
+  position: absolute;
+  white-space:nowrap;
+  
+}
+.dianyin {
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  /* border-right: 1rpx solid #33CEC3; */
+}
+.dianyin >view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tushu {
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.tushu >view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-dianying {
+  width: 50%;
+  font-size: 120rpx;
+}
+.icon-keben {
+  width: 50%;
+  
+  font-size: 120rpx;
+}

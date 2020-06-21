@@ -1,0 +1,45 @@
+/* pages/like_list/like_list.wxss */
+/* pages/movie/movie.wxss */
+page{
+  background: #FAF9DE;
+}
+.body{
+  height: 100%;
+}
+.scroll-view {
+  margin-top: 40rpx;
+  width: 100%;
+ 
+}
+.movie-info {
+  margin-left: 20rpx;
+  width: 100%;
+
+}
+.movie-item {
+  width: 30%;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+.movie-item image {
+  width: 220rpx;
+  height: 280rpx;
+  border: 1rpx #ddd;
+  border-radius: 3%;
+}
+
+.movie-name {
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+
+/* .hasData{
+  text-align: center;
+  font-size: 30rpx;
+  color: gray;
+} */

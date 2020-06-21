@@ -1,0 +1,30 @@
+<!--pages/personal/personal.wxml-->
+<view class="content">
+  <view class="head">
+    <view wx:if="{{!is_login}}">
+      <button  class="_button" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"  />
+    </view>  
+  <view wx:else>
+     <image src="{{userInfo.avatarUrl}}" />
+     <text>{{userInfo.nickName}}</text>
+      <view class="exit" bindtap="exit">
+        <i class="iconfont icon-tuichu_huaban1"></i> 
+      </view>
+  </view>
+</view>
+</view>
+<view class="fun">
+  <view class="like">我喜欢的</view>
+  <view class="icon">
+     <view class="dianyin" bindtap="like_movies">
+        <i class="iconfont icon-dianying"></i>
+        <view>电影</view>
+      </view>
+     <view class="tushu" bindtap="like_books">
+        <i class="iconfont icon-keben"></i>
+        <view>图书</view>  
+      </view>
+     
+  </view>
+   
+</view>

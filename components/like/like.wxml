@@ -1,0 +1,7 @@
+<!--components/like/like.wxml-->
+<view bindtap="like" class="like_box" >
+  <image wx:if="{{isLike == true}}" src="/images/like.png"/>
+  <image wx:else src="/images/unlike.png"/>
+  <text  class="liked" wx:if="{{isLike == true}}">已喜欢</text>
+  <text  class="unlike" wx:else>喜  欢</text>
+</view>
